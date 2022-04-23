@@ -14,7 +14,7 @@ export default function Home() {
       <div className="about">
         <h5 className="name">Hello, I'm Nicat Mirzoev</h5>
         <h1 className="whatido">I make websites.</h1>
-        <p className="about-me">I’m a full stack web developer with experience in developing front-end and back-end systems. I am learning new web technologies to improve myself.</p>
+        <p className="about-me">I’m a full stack web developer with experience in developing front-end and back-end systems. I build high quality websites that meets with your business goals.</p>
         <Link href="/projects">
           <a className="check-projects">
             View my projects ->

@@ -137,6 +137,64 @@ header {
   transition-timing-function: ease-in-out;
 }
 
+.projects {
+  max-width: 1120px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 7px;
+  transition: 0.3s;
+  background-color: #212225;
+  box-shadow: rgb(0 0 0 / 20%) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project-name {
+  color: #f3e9cd;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: white;
+  opacity: 70%;
+  font-size: 15px;
+}
+
+.project-img {
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.project-techs {
+  display: flex;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.project-techs span {
+  font-size: 12px;
+  color: red;
+  opacity: 70%;
+}
+
 @media screen and (max-width: 555px) {
   .whatido {
     font-size: 50px;
