@@ -4,27 +4,19 @@ const projects = [
   {
     id: 1,
     name: "HardCode",
-    img: "/project.png",
-    desc: "A full stack e-commerce website that I made with React and I used Node.js for create back-end.",
-    techs: ["MongoDB", "Express"],
+    img: "/hardcode.png",
+    desc: "A platform where users can improve their programming skills by solving tasks. They solve various tasks in different programming languages and earn experience points.",
+    techs: ["React", "Redux", "TailwindCSS", "GraphQL", "MySQL"],
     link: "https://github.com/NicatMirzaev/hardcode-frontend"
   },
   {
     id: 2,
-    name: "HardCode",
-    img: "/project.png",
-    desc: "A full stack e-commerce website that I made with React and I used Node.js for create back-end.",
-    techs: ["MongoDB", "Express"],
-    link: "https://github.com/NicatMirzaev/hardcode-frontend"
+    name: "Personal Blog",
+    img: "/personal-blog.png",
+    desc: "My personal blog where I share my blogs. I made this for coding competition.",
+    techs: ["NextJS", "TailwindCSS", "Express"],
+    link: "http://nicat-personal-blog.herokuapp.com/"
   },
-  {
-    id: 3,
-    name: "HardCode",
-    img: "/project.png",
-    desc: "A full stack e-commerce website that I made with React and I used Node.js for create back-end.",
-    techs: ["MongoDB", "Express"],
-    link: "https://github.com/NicatMirzaev/hardcode-frontend"
-  }
 ]
 
 export default function Projects() {
