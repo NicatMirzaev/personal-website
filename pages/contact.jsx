@@ -1,10 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = "service_0wjcu8w";
-const TEMPLATE_ID = "template_xl7g70c";
-const USER_ID = "BrvCjfzTpLO3Ud6e0";
-
 export default function Contact() {
   const [values, setValues] = useState({
     fullName: "",
