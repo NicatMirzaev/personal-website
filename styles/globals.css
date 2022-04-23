@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif
+}
+
+#__next, .content {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  transition-duration: 250ms;
+  transition-property: opacity;
+}
+
+.logo-container {
+  width: 128px;
+  height: 128px;
+}
+
+.check-projects {
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+  color: white;
+  opacity: 50%;
+  margin-top: 30px;
+  transition-duration: 250ms;
+  transition-property: opacity;
+}
+
+.check-projects:hover {
+  opacity: 100%;
+}
+
+.logo:hover {
+  opacity: 80%;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  font-size: 12px;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-right: 30px;
+  transition-duration: 250ms;
+  transition-property: color, width;
+  transition-timing-function: ease-in-out;
+}
+
+.nav:hover {
+  color: #888888;
+}
+
+.about {
+  max-width: 1024px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 124px;
+}
+
+.name {
+  color: #ff335f;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.whatido {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.about-me {
+  color: white;
+  opacity: 80%;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.social-media-icon:hover {
+  fill: white;
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 555px) {
+  .whatido {
+    font-size: 50px;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .about-me {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .navs {
+    padding-left: 12px;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .whatido {
+    font-size: 41px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .about-me {
+    font-size: 14px;
+  }
+
+  .about {
+    margin-top: 90px;
+  }
+}
