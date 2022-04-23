@@ -6,11 +6,6 @@ import LinkedInIcon from '../components/icons/Linkedin';
 export default function Home() {
   return (
     <div className="content">
-      <Head>
-        <title>Personal Website - Nicat Mirzoev</title>
-        <meta name="description" content="Nicat Mirzoev Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="about">
         <h5 className="name">Hello, I am Nicat Mirzoev</h5>
         <h1 className="whatido">I make websites.</h1>
