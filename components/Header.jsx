@@ -16,8 +16,8 @@ export default function Header() {
               <span className="nav">Projects</span>
             </a>
           </Link>
-          <Link href="/resume">
-            <a>
+          <Link href="/resume.pdf">
+            <a target="_blank" rel="noopener noreferrer">
               <span className="nav">Resume</span>
             </a>
           </Link>
