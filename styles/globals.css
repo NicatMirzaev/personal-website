@@ -277,7 +277,7 @@ header {
   background: #fd6868;
 }
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 655px) {
   .whatido {
     font-size: 50px;
   }
