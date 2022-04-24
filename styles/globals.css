@@ -90,6 +90,7 @@ header {
 
 .nav:hover {
   color: #888888;
+  cursor: pointer;
 }
 
 .about {

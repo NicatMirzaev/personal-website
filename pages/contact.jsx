@@ -1,7 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import translate from "../lib/language";
 
-export default function Contact() {
+export default function Contact({ language }) {
   const [values, setValues] = useState({
     fullName: "",
     email: "",
@@ -39,8 +40,7 @@ export default function Contact() {
       .then(
         function (response) {
           setData({
-            message:
-              "Your message has been sent, I will get back to you as soon as possible.",
+            message: translate(language, "sent"),
             messageType: 2,
             loading: false,
           });
@@ -49,7 +49,7 @@ export default function Contact() {
         },
         function (error) {
           setData({
-            message: `There was an error sending your message, try again. (${error})`,
+            message: translate(language, "notSent") + `(${error})`,
             messageType: 1,
             loading: false,
           });
@@ -60,12 +60,12 @@ export default function Contact() {
 
   return (
     <form className="contact" onSubmit={onSubmit}>
-      <h1>Contact</h1>
-      <h3>Get in touch or shoot me an email directly on nicatmirzoev111@gmail.com</h3>
-      <input type="text" name="fullName" value={values.fullName} onChange={handleChange} placeholder="Full Name" required /> 
-      <input type="email" name="email" value={values.email} onChange={handleChange} placeholder="Email" required />
-      <textarea name="message" value={values.message} onChange={handleChange} placeholder="Message" required ></textarea>
-      <button disabled={data.loading} type="submit">Send</button>
+      <h1>{translate(language, "contact")}</h1>
+      <h3>{translate(language, "contactMail")}</h3>
+      <input type="text" name="fullName" value={values.fullName} onChange={handleChange} placeholder={translate(language, "namePlaceholder")} required /> 
+      <input type="email" name="email" value={values.email} onChange={handleChange} placeholder={translate(language, "emailPlaceholder")} required />
+      <textarea name="message" value={values.message} onChange={handleChange} placeholder={translate(language, "messagePlaceholder")} required ></textarea>
+      <button disabled={data.loading} type="submit">{translate(language, "send")}</button>
       {data.message.length > 0 && (
         <p style={{ color: data.messageType === 1 ? "red" : "green" }}>
           {data.message}

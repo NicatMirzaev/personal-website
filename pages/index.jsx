@@ -3,16 +3,18 @@ import Link from "next/link";
 import GitHubIcon from '../components/icons/Github';
 import LinkedInIcon from '../components/icons/Linkedin';
 
-export default function Home() {
+import translate from "../lib/language";
+
+export default function Home({ language }) {
   return (
     <div className="content">
       <div className="about">
-        <h5 className="name">Hello, I am Nicat Mirzoev</h5>
-        <h1 className="whatido">I make websites.</h1>
-        <p className="about-me">I am a full stack web developer with experience in developing front-end and back-end systems. I build high quality websites that meets with your business goals.</p>
+        <h5 className="name">{translate(language, "hello")}</h5>
+        <h1 className="whatido">{translate(language, "imake")}</h1>
+        <p className="about-me">{translate(language, "about")}</p>
         <Link href="/projects">
           <a className="check-projects">
-            View my projects {"->"}
+            {translate(language, "viewProjects")}
           </a>
         </Link>
         <div className="social-media">
