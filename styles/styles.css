@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+html,
+body, #__next {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #0F1624;
+  font-family: Space Grotesk, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1072px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  border-radius: 100%;
+  transition-duration: 250ms;
+  transition-property: opacity;
+}
+
+.logo:hover {
+  opacity: 80%;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-switch {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav:hover, .language-switch:hover .nav {
+  color: white;
+  opacity: 1;
+}
+
+.nav {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+}
+
+.social-media {
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  transition: 0.3s ease;
+}
+
+.social-media:hover {
+  background-color: #212d45;
+  transform: scale(1.2);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.iam {
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 72px;
+  background: linear-gradient(121.57deg,#FFFFFF 18.77%,rgba(255,255,255,0.66) 60.15%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  min-height: 150px;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.separator {
+  width: 72px;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.project-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.PersonalAchievements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.achievement-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.achievement {
+  background-color: #212D45;
+  border-radius: 12px;
+  width: 200px;
+  height: 144px;
+  padding: 24px;
+}
+
+.achievement-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.achievement-desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(255,255,255,0.75);
+}
+
+.header-text {
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 72px;
+  background: linear-gradient(121.57deg,#FFFFFF 18.77%,rgba(255,255,255,0.66) 60.15%);
+  background-clip: text;
+  -webkit-text-fill-color: white;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.experience-item {
+  height: 100px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.left-side {
+  width: 20px;
+  border-right: 1px solid #333;
+  height: 100%;
+  position: relative;
+}
+
+.right-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.right-side span {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.right-side h1 span {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.period {
+  background-color: #807373;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  opacity: .8;
+  padding: 1px 10px;
+  width: fit-content;
+}
+
+.work-icon {
+  background-color: #ffb400;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  z-index: 1;
+}
+
+.project {
+  width: 310px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 7px;
+  transition: 0.3s;
+  background-color: #212225;
+  box-shadow: rgb(0 0 0 / 20%) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project-name {
+  color: #f3e9cd;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: white;
+  opacity: 70%;
+  font-size: 15px;
+}
+
+.project-img {
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.project-techs {
+  display: flex;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.imgcontainer {
+  position: relative;
+  width: 460px;
+  height: 460px;
+}
+
+.technology-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 24px;
+}
+
+.technology-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.technology-desc {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255,255,255,0.75);
+}
+
+.project-techs span {
+  font-size: 12px;
+  color: #fd4d4d;
+}
+
+.technology {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 440px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    max-width: 100%;
+  }
+  .imgcontainer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .iam {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 0px;
+  }
+  .header-text {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
