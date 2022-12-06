@@ -7,8 +7,8 @@ const experiences = [
     company: "Citadeli (ციტადელი)",
     position: "Front End Developer",
     period: "May 2022 - Oct 2022",
-    description_en: "Technologies I used: HTML, CSS, Javascript, React, Git, Material UI.",
-    description_ge: "გამოვიყენე ტექნოლოგიები: HTML, CSS, Javascript, React, Git, Material UI.",
+    description_en: "Technologies I used: Typescript, React, Git, Material UI.",
+    description_ge: "გამოვიყენე ტექნოლოგიები: Typescript, React, Git, Material UI.",
     type: "Full Time",
   },
 ]
